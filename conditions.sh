@@ -2,7 +2,7 @@
 
 NUMBER=$1
 
-if [ 1 -lt 100 ]
+if [ $1 -lt 100 ]
     then 
     echo "the equation was correct"
 else
