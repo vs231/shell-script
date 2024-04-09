@@ -1,10 +1,10 @@
 #!/bin/bash
 
-NUMBER=$1
+ID=$(id -u)
 
-if [ $1 -lt 100 ]
-    then 
-    echo "the equation was correct"
+if [ $ID -ne 0 ]
+then
+    echo "you are not a root user, run with root user"
 else
-    echo "the equation was wrong"
+    echo "you are root user"
 fi
