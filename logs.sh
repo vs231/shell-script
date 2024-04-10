@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ID=$(id -u)
-TIMESTAMP=$(date +%D-%H-%M-%S)
+TIMESTAMP=$(date +%F-%H-%M-%S)
 LOGFILE="/tmp/$0-$TIMESTAMP.log" 
 echo "script started and excuting $TIMESTAMP" &>> $LOGFILE
 VALIDATE(){
