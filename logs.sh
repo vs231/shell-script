@@ -2,7 +2,7 @@
 
 ID=$(id -u)
 TIME=$(date +%D-%H-%M-%S)
-LOGFILE="/temp/$0-$TIME.log" 
+LOGFILE="/tmp/$0-$TIME.log" 
 echo "script started and excuting $time" &>> $LOGFILE
 VALIDATE(){
     if [ $1 -ne 0 ]
