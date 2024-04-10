@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ID=$(id -u)
-TIME=$(DATE +%D-%H-%M-%S)
+TIME=$(date +%D-%H-%M-%S)
 LOGFILE="/temp/$0-$TIME.log" 
 echo "script started and excuting $time" &>> $LOGFILE
 VALIDATE(){
