@@ -1,9 +1,9 @@
 #!/bin/bash
 
 ID=$(id -u)
-TIME=$(date +%D-%H-%M-%S)
-LOGFILE="/tmp/$0-$TIME.log" 
-echo "script started and excuting $time" &>> $LOGFILE
+TIMESTAMP=$(date +%D-%H-%M-%S)
+LOGFILE="/tmp/$0-$TIMESTAMP.log" 
+echo "script started and excuting $TIMESTAMP" &>> $LOGFILE
 VALIDATE(){
     if [ $1 -ne 0 ]
     then
