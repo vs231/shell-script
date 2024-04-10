@@ -15,7 +15,7 @@ VALIDATE(){
         echo " $R Error $N package can't install "
         exit 1
     else
-        echo "$N $2 $G successfully installed"
+        echo " $2 $N  $G successfully installed"
     fi
 }
 
