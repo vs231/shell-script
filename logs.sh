@@ -26,7 +26,7 @@ VALIDATE(){
     fi
 
     yum install mysql -y &>> $LOGFILE
-    VALIDATE $? "mysql"
+    VALIDATE $1 "mysql"
 
     yum install git -y &>> $LOGFILE
     VALIDATE $? "git"
