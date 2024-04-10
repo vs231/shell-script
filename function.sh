@@ -3,7 +3,7 @@
 ID=$(id -u)
  
 VALIDATE(){
-    if [ $1 -ne 0 ]
+if [ $1 -ne 0 ]
 then
     echo "installation problem, check error $2....."
     exit 1
