@@ -3,14 +3,17 @@
 ID=$(id -u)
 TIMESTAMP=$(date +%F-%H-%M-%S)
 LOGFILE="/tmp/$0-$TIMESTAMP.log" 
+R="\e[31m"
+G="\e[32m"
+N="\e[0m"
 echo "script started and excuting $TIMESTAMP" &>> $LOGFILE
 VALIDATE(){
     if [ $1 -ne 0 ]
     then
-        echo "check the error"
+        echo -e "$R Error"
         exit 1
     else
-        echo "$2 installed successfully"
+        echo -e "$2 installed $G successfully"
     fi
 }
 
