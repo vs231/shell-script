@@ -3,6 +3,7 @@
 ID=$(id -u)
 R="\e[31m"
 G="\e[32m"
+Y="\e[33m"
 N="\e[0m"
 
 TIMES=$(date +%F-%H-%M-%S)
@@ -34,6 +35,6 @@ do
         yum install $package -y &>> LOGFILE
         VALIDATE $? "installation of $package" 
     else
-        echo -e " $G $package  is already installed $N .... $Y skipping "
+        echo -e " $G $package  $N is already installed  .... $Y skipping "
     fi
 done
