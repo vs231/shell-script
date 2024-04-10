@@ -7,7 +7,7 @@ Y="\e[33m"
 N="\e[0m"
 
 TIMES=$(date +%F-%H-%M-%S)
-LOGFILE="/trmp/$0-$TIMES.log"
+LOGFILE="/tmp/$0-$TIMES.log"
 
 
 VALIDATE(){
