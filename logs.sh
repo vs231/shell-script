@@ -2,7 +2,7 @@
 
 ID=$(id -u)
 TIMESTAMP=$(date +%F-%H-%M-%S)
-LOGFILE="/tmp/$0-$TIMESTAMP.log" 
+LOGFILE="/tep/$0-$TIMESTAMP.log" 
 R="\e[31m"
 G="\e[32m"
 N="\e[0m"
@@ -26,7 +26,7 @@ VALIDATE(){
     fi
 
     yum install mysql -y &>> $LOGFILE
-    VALIDATE $1 "mysql"
+    VALIDATE $? "mysql"
 
-    yum install git -y &>> $LOGFILE
+    yum install  git -y &>> $LOGFILE
     VALIDATE $? "git"
