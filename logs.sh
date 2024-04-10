@@ -2,7 +2,7 @@
 
 ID=$(id -u)
 TIMESTAMP=$(date +%F-%H-%M-%S)
-LOGFILE="/tep/$0-$TIMESTAMP.log" 
+LOGFILE="/tmp/$0-$TIMESTAMP.log" 
 R="\e[31m"
 G="\e[32m"
 N="\e[0m"
