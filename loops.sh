@@ -15,7 +15,7 @@ VALIDATE(){
         echo -e " $R Error $N package can't install "
         exit 1
     else
-        echo -e " $N $2...  successfully installed  "
+        echo -e " $N $2...  $G successfully installed  "
     fi
 }
 
@@ -34,6 +34,6 @@ do
         yum install $package -y &>> LOGFILE
         VALIDATE $? "installation of $package" 
     else
-        echo " $package is already installed "
+        echo -e " $G $package $N is already installed $Y....skipping"
     fi
 done
