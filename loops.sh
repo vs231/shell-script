@@ -12,10 +12,10 @@ LOGFILE="/tmp/$0-$TIMES.log"
 VALIDATE(){
     if [ $1 -ne 0 ]
     then 
-        echo " $R Error $N package can't install "
+        echo -e " $R Error $N package can't install "
         exit 1
     else
-        echo " $2 $N  $G successfully installed"
+        echo -e " $2 $N   successfully installed $G"
     fi
 }
 
